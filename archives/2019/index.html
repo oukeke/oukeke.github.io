@@ -530,7 +530,7 @@
             mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
             seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
             snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-            document.getElementById("timeDate").innerHTML ="本站已安全运行 "+dnum+" 天 "; 
+            document.getElementById("timeDate").innerHTML ="本站运行 "+dnum+" 天 "; 
             document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
         } 
     setInterval("createtime()",250);
@@ -688,8 +688,8 @@
         el: '#comments' ,
         verify: false,
         notify: false,
-        appId: 'C7ol1Q44u8CAxeWJ93Hrxg4o-gzGzoHsz',
-        appKey: 'dS8D2v6KBUrYaFfjPBEmVYzh',
+        appId: 'J8XpJ24knPIVj8q4k2gAVtv7-gzGzoHsz',
+        appKey: 'yxm1xqcPfkfByGPdHuXUGgy3',
         placeholder: '来踩踩',
         avatar:'mm',
         guest_info:guest,
