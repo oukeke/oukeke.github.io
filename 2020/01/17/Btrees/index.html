@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="C++,数据结构,">
 
 
 
@@ -79,17 +79,20 @@
 
 
 
-<meta name="description" content="将网站彻底用来记录我自己的学习好了。 加油！有缘看到这个网站的人也是！">
+<meta name="description" content="B树（也称为B-树）基本定义 是一颗多路平衡查找树 每个节点最多有m-1个关键字（可以存在的键值对） 根结点最少可以只有1个关键字 非根结点至少要有m/2个关键字 每个节点中的关键字都按从小到大的顺序排列，每个关键字的左子树的所有关键字都小于它，而右子树的所有关键字都大于它。 所有的叶子节点都位于同一层，或者说根结点到叶子结点的距离都相同 每个节点都有索引和数据，即key和value总结：  根结">
+<meta name="keywords" content="C++,数据结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="purpose">
-<meta property="og:url" content="http://yoursite.com/2020/01/17/purpose/index.html">
+<meta property="og:title" content="B树和B+树">
+<meta property="og:url" content="http://yoursite.com/2020/01/17/Btrees/index.html">
 <meta property="og:site_name" content="欧姐的学习小笔记">
-<meta property="og:description" content="将网站彻底用来记录我自己的学习好了。 加油！有缘看到这个网站的人也是！">
+<meta property="og:description" content="B树（也称为B-树）基本定义 是一颗多路平衡查找树 每个节点最多有m-1个关键字（可以存在的键值对） 根结点最少可以只有1个关键字 非根结点至少要有m/2个关键字 每个节点中的关键字都按从小到大的顺序排列，每个关键字的左子树的所有关键字都小于它，而右子树的所有关键字都大于它。 所有的叶子节点都位于同一层，或者说根结点到叶子结点的距离都相同 每个节点都有索引和数据，即key和value总结：  根结">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-01-17T07:29:10.454Z">
+<meta property="og:image" content="http://yoursite.com/2020/01/17/Btrees/1.png">
+<meta property="og:updated_time" content="2020-01-17T08:23:48.756Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="purpose">
-<meta name="twitter:description" content="将网站彻底用来记录我自己的学习好了。 加油！有缘看到这个网站的人也是！">
+<meta name="twitter:title" content="B树和B+树">
+<meta name="twitter:description" content="B树（也称为B-树）基本定义 是一颗多路平衡查找树 每个节点最多有m-1个关键字（可以存在的键值对） 根结点最少可以只有1个关键字 非根结点至少要有m/2个关键字 每个节点中的关键字都按从小到大的顺序排列，每个关键字的左子树的所有关键字都小于它，而右子树的所有关键字都大于它。 所有的叶子节点都位于同一层，或者说根结点到叶子结点的距离都相同 每个节点都有索引和数据，即key和value总结：  根结">
+<meta name="twitter:image" content="http://yoursite.com/2020/01/17/Btrees/1.png">
 
 
 
@@ -135,7 +138,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/01/17/purpose/">
+  <link rel="canonical" href="http://yoursite.com/2020/01/17/Btrees/">
 
 
 
@@ -151,7 +154,7 @@
 
 
 
-  <title>purpose | 欧姐的学习小笔记</title>
+  <title>B树和B+树 | 欧姐的学习小笔记</title>
   
 
 
@@ -311,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/17/purpose/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/17/Btrees/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="欧姐">
@@ -328,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">purpose</h1>
+          <h1 class="post-title" itemprop="name headline">B树和B+树</h1>
         
 
         <div class="post-meta">
@@ -340,7 +343,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-17T15:21:35+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-17T16:06:50+08:00">
                 2020-01-17
               </time>
             
@@ -359,8 +362,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/01/17/purpose/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2020/01/17/purpose/" itemprop="commentCount"></span>
+                <a href="/2020/01/17/Btrees/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/01/17/Btrees/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -368,7 +371,7 @@
 
           
           
-             <span id="/2020/01/17/purpose/" class="leancloud_visitors" data-flag-title="purpose">
+             <span id="/2020/01/17/Btrees/" class="leancloud_visitors" data-flag-title="B树和B+树">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -399,8 +402,42 @@
       
 
       
-        <p>将网站彻底用来记录我自己的学习好了。</p>
-<p>加油！有缘看到这个网站的人也是！</p>
+        <h1 id="B树（也称为B-树）"><a href="#B树（也称为B-树）" class="headerlink" title="B树（也称为B-树）"></a>B树（也称为B-树）</h1><h2 id="基本定义"><a href="#基本定义" class="headerlink" title="基本定义"></a>基本定义</h2><ul>
+<li>是一颗多路平衡查找树</li>
+<li>每个节点最多有<code>m-1</code>个关键字（可以存在的键值对）</li>
+<li>根结点最少可以只有<code>1</code>个关键字</li>
+<li>非根结点至少要有<code>m/2</code>个关键字</li>
+<li>每个节点中的关键字都按从小到大的顺序排列，每个关键字的左子树的所有关键字都小于它，而右子树的所有关键字都大于它。</li>
+<li>所有的叶子节点都位于同一层，或者说根结点到叶子结点的距离都相同</li>
+<li>每个节点都有索引和数据，即key和value<br>总结：</li>
+</ul>
+<p>根结点的关键字的范围在<code>1 ≤ k ≤ m-1</code>，非根结点的关键字范围在<code>m/2 ≤ k ≤ m-1</code></p>
+<p>（描述一颗b树需要指定它的阶数，阶数表示一个节点最多可以有多少孩子节点，一般用<code>m</code>表示。）</p>
+<h2 id="B树插入"><a href="#B树插入" class="headerlink" title="B树插入"></a>B树插入</h2><p>判断当前key的节点是不是小于<code>m-1</code>，如果是，则直接插入；如果不是，则将节点中间的key将这个节点分为左右两部分，中间的节点放在父节点即可。</p>
+<h2 id="B树删除"><a href="#B树删除" class="headerlink" title="B树删除"></a>B树删除</h2><p>分情况分析：</p>
+<ul>
+<li>删除叶子结点的元素，删除之后，叶子结点元素仍然大于<code>m/2</code>，则可以直接删除。</li>
+<li>对于非叶子节点的删除，需要用后继元素覆盖要删除的key，然后在后继key所在的子支中删除该后继key。</li>
+<li>如果删除叶子结点，删除后叶子节点元素小于<code>m/2</code>，就应该向兄弟元素借：如果此时兄弟节点的元素大于<code>m/2</code>，也即是兄弟节点的元素比最小值<code>m/2</code>还要多，将父节点元素移动到该节点，将兄弟元素移动到父节点。</li>
+<li>如果删除叶子结点，删除后叶子节点元素小于<code>m/2</code>，且兄弟节点的元素也不大于<code>m/2</code></li>
+</ul>
+<h1 id="B-树"><a href="#B-树" class="headerlink" title="B+树"></a>B+树</h1><h2 id="基本定义-1"><a href="#基本定义-1" class="headerlink" title="基本定义"></a>基本定义</h2><p>与B树的相同点：</p>
+<ul>
+<li>根结点至少有1个关键字</li>
+<li>非根结点范围<code>m/2 ≤ k ≤ m-1</code><br>与B树的不同点：</li>
+<li>b+树有两种类型的节点：内部节点（索引节点，非叶子结点）和叶子结点。内部节点不存储关键字的值，只存储索引，值都存储在叶子结点。</li>
+<li>内部节点中key都按从小到大排序，对于内部节点中的一个key，它左子树中的key都比他小，右子树中的key都比他大。叶子节点中的数据也按照key的大小排序。</li>
+<li>每个叶子结点都有相邻叶子结点的指针，叶子结点本身依依关键字的大小自小而大顺序链接</li>
+<li>父节点有右孩子第一个元素的索引<br><img src="/2020/01/17/Btrees/1.png" alt="avatar"></li>
+</ul>
+<h2 id="B-树插入"><a href="#B-树插入" class="headerlink" title="B+树插入"></a>B+树插入</h2><p>当节点元素大于<code>m-1</code>时，按中间元素分成两部分，中间元素分裂到父节点当作索引存储，但是本身中间元素还是分裂右边这一部分的。</p>
+<h2 id="B-树删除"><a href="#B-树删除" class="headerlink" title="B+树删除"></a>B+树删除</h2><p>叶子结点有指针的存在，所以借元素不需要通过父节点，可以直接向兄弟节点借（前提是兄弟节点的元素大于<code>m/2</code>），然后更新父节点的索引。如果兄弟节点的元素个数不大于<code>m/2</code>，则将当前节点与兄弟节点合并，并删除父节点中的key。</p>
+<h1 id="B-树相较于B-树的优势"><a href="#B-树相较于B-树的优势" class="headerlink" title="B+树相较于B-树的优势"></a>B+树相较于B-树的优势</h1><ul>
+<li>单一节点存储的元素更多，是的查询的IO次数减少，因此更适合作为数据库的底层数据结构（MySql）</li>
+<li>所有的查询都要找到叶子结点，查询性能稳定，而b树每个节点都可能找到数据，所以不稳定</li>
+<li>所有叶子结点形成一个有序链表，更便于查找</li>
+</ul>
+<h1 id="学习总结"><a href="#学习总结" class="headerlink" title="学习总结"></a>学习总结</h1><p>这里的插入和删除都要自己动手画一下流程，这样记忆才会比较深刻。</p>
 
       
     </div>
@@ -416,6 +453,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/C/" rel="tag"># C++</a>
+          
+            <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
+          
+        </div>
+      
 
       
       
@@ -425,15 +470,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/01/17/static/" rel="next" title="关于static关键字">
+                <i class="fa fa-chevron-left"></i> 关于static关键字
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/01/17/static/" rel="prev" title="关于static关键字">
-                关于static关键字 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -488,8 +533,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -564,6 +618,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#B树（也称为B-树）"><span class="nav-number">1.</span> <span class="nav-text">B树（也称为B-树）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本定义"><span class="nav-number">1.1.</span> <span class="nav-text">基本定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B树插入"><span class="nav-number">1.2.</span> <span class="nav-text">B树插入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B树删除"><span class="nav-number">1.3.</span> <span class="nav-text">B树删除</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-树"><span class="nav-number">2.</span> <span class="nav-text">B+树</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本定义-1"><span class="nav-number">2.1.</span> <span class="nav-text">基本定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B-树插入"><span class="nav-number">2.2.</span> <span class="nav-text">B+树插入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B-树删除"><span class="nav-number">2.3.</span> <span class="nav-text">B+树删除</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#B-树相较于B-树的优势"><span class="nav-number">3.</span> <span class="nav-text">B+树相较于B-树的优势</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#学习总结"><span class="nav-number">4.</span> <span class="nav-text">学习总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
